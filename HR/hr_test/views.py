@@ -279,13 +279,6 @@ class ResultAdmin(View):
 		result_admin = AdvUser.objects.filter(is_staff=False, is_manager=False)
 		if search_query:
 			result_admin = AdvUser.objects.filter(is_staff=False, is_manager=False).only('username').filter(username__icontains=search_query)
-		# else:
-		# 	result_user = short_code.only('poll_total')[:10]		
-		# result_list = []
-		# for i in result_user:
-		# 	result_list.append(i.poll_total)
-		# result = Results.objects.filter(poll_total__in=result_list)
-		# result_admin = AdvUser.objects.filter(is_staff=False, is_manager=False)
 		result = ResultsAll.objects.all()
 		context = {
 			'result': result,
