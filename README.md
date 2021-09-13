@@ -7,7 +7,3 @@
    - создаем superuser docker-compose exec web python manage.py createsuperuser 
    - после этого приложение должно работать на 7000 порту в противном случае выпольнить docker-compose exec web python manage.py runserver. 
 Приложение без данных, данные необходимо наполнять самостоятельно. 
-
-Так же приложение работает по адресу http://privatenglishtutor.ru/ для того чтобы зайти как менеджер
-
-login: manager pass: man12345 для тестирования со стороны пользователя зарегистрируйтесь и пройдите опросы.
